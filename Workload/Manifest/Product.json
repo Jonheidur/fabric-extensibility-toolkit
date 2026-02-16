@@ -22,7 +22,8 @@
         "customActions": [
         ]},
         "recommendedItemTypes": [
-          "HelloWorld"
+          "HelloWorld",
+          "SalesForecast"
         ]
     },
     "createExperience": {
@@ -44,6 +45,27 @@
             "workspace-plus-new-teams"
           ],
           "itemType": "HelloWorld",
+          "createItemDialogConfig": {
+            "onCreationFailure": { "action": "item.onCreationFailure" },
+            "onCreationSuccess": { "action": "item.onCreationSuccess" }
+          }
+        },
+        {
+          "title": "SalesForecastItem_DisplayName",
+          "description": "SalesForecastItem_Description",
+          "icon": {
+            "name": "assets/images/SalesForecastItem_Icon.png"
+          },
+          "icon_small": {
+            "name": "assets/images/SalesForecastItem_Icon.png"
+          },
+          "availableIn": [
+            "home",
+            "create-hub",
+            "workspace-plus-new",
+            "workspace-plus-new-teams"
+          ],
+          "itemType": "SalesForecast",
           "createItemDialogConfig": {
             "onCreationFailure": { "action": "item.onCreationFailure" },
             "onCreationSuccess": { "action": "item.onCreationSuccess" }
